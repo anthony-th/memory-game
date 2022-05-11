@@ -28,7 +28,6 @@ main {
 }
 
 button {
-  margin: 10px auto 0;
   width: 190px;
   height: 40px;
   background: #2b2a33;
@@ -78,10 +77,10 @@ button:hover {
   position: relative;
   transform-style: preserve-3d;
   box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
- transform: scale(1);
- transform-style: preserve-3d;
- transition: transform .5s;
- cursor: pointer;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  cursor: pointer;
 }
 
 .card:active {
@@ -134,4 +133,11 @@ footer div p {
 footer div p:hover {
   color: #ffffff;
   transition: 1s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
 }
