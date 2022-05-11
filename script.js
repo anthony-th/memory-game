@@ -1,10 +1,15 @@
 const cards = document.querySelectorAll('.card');
-const btn = document.querySelector('button');
+const btn = document.querySelector('.btn-shuffle');
+const btnNewGame = document.querySelector('.btn-newgame');
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 
+
+function newgame() {
+  location.reload();
+}
 
 function flipCard() {
     if (lockBoard) return;
@@ -70,3 +75,5 @@ function shuffle() {
 
 btn.addEventListener('click', shuffle);
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+btnNewGame.addEventListener('click', newgame);
